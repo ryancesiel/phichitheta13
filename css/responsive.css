@@ -1,0 +1,97 @@
+/* 
+    Name:	Phi Chi Theta Responsive Styling;
+    Author: Ryan Cesiel
+*/ 
+
+@media (min-width: 960px) {
+	/* vertically centers text on the slider better based on .calltoaction */
+	.vert-center { padding-bottom: 40px; }
+}
+
+@media (min-width: 640px) {
+	.mobile-nav { display:none; }
+}
+
+@media (min-width: 1px) and (max-width: 960px) {
+	.header { height: 60px; }
+	.logo { width: 195px; height: 60px; }
+	.logo img {
+		height: 60px;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+
+	.sub-header { margin-top: -10px; }
+	.sub-nav { display: none; }
+	.content { 
+		top: 80px;
+		margin: 0 auto 110px auto;
+		float: none;
+	}
+	.content-home { top: 15px; margin: 0 auto 35px auto; }
+	.sponsors { margin-bottom: 25px; }
+	.slider .bottom { bottom: 20px; }
+}
+
+@media (min-width: 640px) and (max-width: 960px) {
+	.w-container { width: 640px; }
+	ul.nav { padding-top: 14px; }
+	ul.nav li { margin-left: 3px }
+	ul.nav li a { padding: 6px 8px; }
+	ul.nav li ul li a { padding: 6px 12px; }
+
+	.content { width: 640px; }
+	.content-home { width: 640px; }
+	.calltoaction { width: 580px; height: auto; text-align: center; padding: 10px 30px 15px; }
+	.calltoaction .pull-left, .calltoaction .pull-right { display: block; float: none; line-height: 34px; }
+	.form-horizontal .control-label { width: 80px; }
+	.form-horizontal .controls { margin-left: 100px; }
+	.input-xxlarge { width: 430px; }
+}
+
+@media only screen and (max-width: 640px) {
+	body { font-size: 12px; }
+	.loading:before { margin-top: 100px; }
+	img.pull-left { margin: 0 0 5% 0; }
+	img.pull-right { margin: 0 0 5% 0; }
+	.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth { float:none; display:block; width: 100%; }
+	.w-container { width: 94%; padding: 0 3%;}
+	.pull-left, .pull-right { display: block; float: none; }
+	.slider .w-container h1 { font-size: 24px; }
+	.slider .w-container span.subtitle { font-size: 14px; }
+	.slider .w-container a.btn { font-size: 12px; }
+	.calltoaction { width: auto; height: auto; text-align: center; padding: 5% 7%; font-size: 13px; }
+	.calltoaction .pull-right .inputandbutton { margin-top: 10px; width: 100%; }
+	.calltoaction .inputandbutton input[type="text"] { width: 60%; padding: 4px 2%; }
+	.content { width: auto; }
+	.content-home { width: auto; }
+	.sub-header { top: 56px; }
+	.content-header { padding: 18px 7%;}
+	.content-body { padding: 7%; }
+	.content-body img { width: 100%; }
+
+	ul.nav { display: none; }
+	ul.mobile-nav { display: inline-block; }
+	.white-popup-block {
+	  background: #FFF;
+	  padding: 20px 30px;
+	  text-align: left;
+	  margin: auto;
+	  position: relative;
+	  line-height: 18px;
+	  font-size: 16px;
+	}
+	.white-popup-block > ul { list-style-type: none; max-height: 350px; overflow: auto; }
+	.white-popup-block ul li a { display: block; padding: 8px 0; }
+	.white-popup-block ul li ul { padding: 0 30px 10px; }
+	.white-popup-block ul li ul { list-style-type: square;  }
+	.white-popup-block ul li ul li a { padding: 4px 0; }
+	ul.nav { padding-top: 14px; position: absolute; right:3%; }
+	ul.nav li a { padding: 6px 8px; }
+	ul.nav li a i.icon-menu { background: url(../img/menu.png) no-repeat; margin: 3px 4px 0 0;}
+	ul.nav li a:hover i.icon-menu, ul.nav li:hover i.icon-menu { background-image: url(../img/menu-hover.png); }
+	.form-horizontal .control-label { width: 16%; }
+	.form-horizontal .controls { margin-left: 22%; }
+	.input-xxlarge { width: 100%; }
+}
