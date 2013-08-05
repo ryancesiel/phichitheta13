@@ -1,7 +1,7 @@
 /* 
 	Theme Name:    Phi Chi Theta (2013)
 	Theme URI:     umphichitheta.com
-	Description:   WP Theme created specifically for use by Phi Chi Theta at the University of Michigan
+	Description:   Custom WP theme for Phi Chi Theta at the University of Michigan
 	Version:       2.0
 	Author:        Ryan Cesiel
 */ 
@@ -26,10 +26,11 @@ h1,h2,h3,h4,h5 {
 	color: #111;
 	margin-top: 0;
 }
-h3, h4, h5 { font-weight:400; }
-h1, h2, h3 { margin-bottom: 8px; }
+h1, h2 { margin-bottom: 12px; }
+h3, h4, h5 { margin-bottom: 4px;}
+h1 { font-size: 30px; }
 h2 { font-size: 24px; }
-h3 { font-size: 18px; margin-bottom: 2px; }
+h3 { font-size: 18px; }
 p { line-height: 1.5em; margin-bottom: 10px; }
 small { font-style: italic; color: purple; }
 hr {
@@ -207,7 +208,7 @@ ul.nav li > a:only-child:after { content: ''; }
 	background: #222;
 	width: 100%;
 }
-.slider .w-container { position: relative; letter-spacing: 1px;  }
+.slider .w-container { position: relative; letter-spacing: 1px; color: #FFF; }
 .slider .slidertext { position: absolute; display: block; max-width: 450px; }
 .slider .background { background: #000; opacity: .8; padding: 10px 20px; }
 .slider .top { top: 20px; }
@@ -215,16 +216,10 @@ ul.nav li > a:only-child:after { content: ''; }
 .slider .bottom { bottom: 80px; }
 .slider .horz-center { text-align: center; left: 50%; }
 .slider .right { right: 0; text-align: right; }
-
-.slider .w-container h1 {
-	font-size: 24px;
-	color: #FFF;
-	font-weight: 400;
-	margin-bottom: 0;
-}
+.slider .w-container h1, .slider .w-container h2, .slider .w-container h3, .slider .w-container h4, .slider .w-container h5 { color: #FFF; margin: 0; }
+.slider .w-container h1 { margin-bottom: 0; }
 .slider .w-container span.subtitle {
 	font-size: 16px;
-	color: #FFF;
 	font-weight: 300;
 }
 .slider .w-container a.btn {
@@ -261,14 +256,13 @@ ul.nav li > a:only-child:after { content: ''; }
 	overflow: hidden;
 }
 
-/* Sidebar navigation, for when there are child pages */
+/* Sidebar navigation (when there are child pages) */
 ul.sub-nav {
 	position: fixed;
 	float: left;
 	top: 190px;
 	padding: 0;
 	font-size: 14px;
-	-webkit-font-smoothing: antialiased;
 }
 
 ul.sub-nav li {
@@ -321,26 +315,36 @@ ul.sub-nav li a:hover .right-caret, ul.sub-nav li.current_page_item a .right-car
 	box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
 	min-height: 350px;
 }
-.content-home { float: none; width: 1030px; top: -55px; margin: 0 auto -10px auto; }
+.content-home { float: none; width: 1030px; top: -55px; margin: 0 auto -20px auto; }
 
 .content-header {
 	font-size: 30px;
 	color: #222;
 	padding: 25px 40px;
 	border-bottom: 1px solid #EEE;
-	-webkit-font-smoothing: antialiased;
 }
 .content-body-header {
 	padding: 0 0 20px;
 	color: #222;
 	font-size: 24px;
-	-webkit-font-smoothing: antialiased;
 }
 .content-body {
 	padding: 40px;
 }
 .content-body-header + .content-body {
 	padding-top: 0;
+}
+
+.error404page {
+	position: relative;
+	background: #FFF;
+	width: 420px;
+	top: 100px;
+	color: #555;
+	-moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+	margin: 0 auto;
 }
 
 ul.lined {
@@ -541,26 +545,10 @@ ul.showhide li {
 .one_fifth{ width:16.8%; }
 .two_fifth{ width:37.6%; }
 .three_fifth{ width:58.4%; }
-.four_fifth{ width:67.2%; }
+.four_fifth{ width:79.2%; }
 .one_sixth{ width:13.33%; }
 .five_sixth{ width:82.67%; }
-.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:4%; float:left; }
-.last{ margin-right:0 !important; clear:right; }
-.clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
-
-/* ------- Fluid Columns ------- */
-.one_half{ width:48%; }
-.one_third{ width:30.66%; }
-.two_third{ width:65.33%; }
-.one_fourth{ width:22%; }
-.three_fourth{ width:74%; }
-.one_fifth{ width:16.8%; }
-.two_fifth{ width:37.6%; }
-.three_fifth{ width:58.4%; }
-.four_fifth{ width:67.2%; }
-.one_sixth{ width:13.33%; }
-.five_sixth{ width:82.67%; }
-.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:4%; float:left; }
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ position:relative; margin-right:4%; margin-bottom: 10px; float:left; }
 .last{ margin-right:0 !important; clear:right; }
 .clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
 

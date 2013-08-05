@@ -14,7 +14,7 @@ Template Name: Home Page
 				<li>
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/videobg.jpg" />
 					<div class="w-container">
-						<div class="slidertext vert-center horz-center">
+						<div class="slidertext vert-center left">
 							<h1><span style="color:#fff000;">Rush Phi Chi Theta</span> Fall 2013</h1>
 							<span class="subtitle">Business and Economics Fraternity</span><br /><br />
 							<a class="btn popup-youtube" href="http://www.youtube.com/watch?v=6JjWTAEwAcw">Play Video</a> <a href="rushwelcome.html" class="btn">Learn More About Rushing</a>
@@ -25,7 +25,7 @@ Template Name: Home Page
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/bg1.jpg" />
 					<div class="w-container">
 						<div class="slidertext background bottom right">
-							<h1>Phi Chi Theta Fall 2012</div>
+							<h3>Phi Chi Theta Fall 2012</h3>
 					</div>
 				</li>
 				<li>
@@ -62,7 +62,7 @@ Template Name: Home Page
 			<div class="clearboth"></div>
 		</div>
 		<div class="sponsors">
-			<h2>Proudly Sponsored By:</h2>
+			<h3>Proudly Sponsored By:</h3>
 			<img src="<?php bloginfo('stylesheet_directory'); ?>/img/sponsors.png" />
 		</div>
 	</div>

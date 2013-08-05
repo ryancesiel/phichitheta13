@@ -21,7 +21,7 @@
 		-moz-box-shadow: none;
 		-webkit-box-shadow: none;
 	}
-
+	.calltoaction { border: 1px solid #C5C5C5;}
 	.sub-header { margin-top: -10px; }
 	.sub-nav { display: none; }
 	.content { 
@@ -43,11 +43,12 @@
 
 	.content { width: 640px; }
 	.content-home { width: 640px; }
-	.calltoaction { width: 580px; height: auto; text-align: center; padding: 10px 30px 15px; }
+	.calltoaction { width: 579px; height: auto; text-align: center; padding: 10px 30px 15px; }
 	.calltoaction .pull-left, .calltoaction .pull-right { display: block; float: none; line-height: 34px; }
 	.form-horizontal .control-label { width: 80px; }
 	.form-horizontal .controls { margin-left: 100px; }
 	.input-xxlarge { width: 430px; }
+	.gallery-row img { width: 120px; height: 100px; }
 }
 
 @media only screen and (max-width: 640px) {
@@ -59,17 +60,19 @@
 	.w-container { width: 94%; padding: 0 3%;}
 	.pull-left, .pull-right { display: block; float: none; }
 	.slider .w-container h1 { font-size: 24px; }
+	.slider .w-container h2 { font-size: 18px; }
+	.slider .w-container h3 { font-size: 16px; }
 	.slider .w-container span.subtitle { font-size: 14px; }
 	.slider .w-container a.btn { font-size: 12px; }
 	.calltoaction { width: auto; height: auto; text-align: center; padding: 5% 7%; font-size: 13px; }
 	.calltoaction .pull-right .inputandbutton { margin-top: 10px; width: 100%; }
 	.calltoaction .inputandbutton input[type="text"] { width: 60%; padding: 4px 2%; }
-	.content { width: auto; }
-	.content-home { width: auto; }
+	.content, .content-home, .error404page { width: auto; }
 	.sub-header { top: 56px; }
 	.content-header { padding: 18px 7%;}
 	.content-body { padding: 7%; }
 	.content-body img { width: 100%; }
+	.gallery-row img { width: 80px; height: 65px; }
 
 	ul.nav { display: none; }
 	ul.mobile-nav { display: inline-block; }
