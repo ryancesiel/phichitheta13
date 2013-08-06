@@ -12,27 +12,27 @@ Template Name: Home Page
 		<div class="flexslider">
 			<ul class="slides">
 				<li>
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/videobg.jpg" />
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/videobg.jpg" />
 					<div class="w-container">
-						<div class="slidertext vert-center left">
-							<h1><span style="color:#fff000;">Rush Phi Chi Theta</span> Fall 2013</h1>
-							<span class="subtitle">Business and Economics Fraternity</span><br /><br />
+						<div class="slidertext bottom left">
+							<h1>Lifelong Friends.<br />Professional Growth.</h1>
+							<h3><span style="color:#fff000;">Rush Phi Chi Theta Fall 2013</span></h3><br />
 							<a class="btn popup-youtube" href="http://www.youtube.com/watch?v=6JjWTAEwAcw">Play Video</a> <a href="rushwelcome.html" class="btn">Learn More About Rushing</a>
 						</div>
 					</div>
 				</li>
 				<li>
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/bg1.jpg" />
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/bg1.jpg" />
 					<div class="w-container">
 						<div class="slidertext background bottom right">
 							<h3>Phi Chi Theta Fall 2012</h3>
 					</div>
 				</li>
 				<li>
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/bg2.jpg" />
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/bg2.jpg" />
 				</li>
 				<li>
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/bg3.jpg" />
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/bg3.jpg" />
 				</li>
 			</ul>
 		</div>
@@ -63,7 +63,7 @@ Template Name: Home Page
 		</div>
 		<div class="sponsors">
 			<h3>Proudly Sponsored By:</h3>
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/img/sponsors.png" />
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/sponsors.png" />
 		</div>
 	</div>
 

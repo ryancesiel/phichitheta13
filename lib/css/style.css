@@ -216,6 +216,7 @@ ul.nav li > a:only-child:after { content: ''; }
 .slider .bottom { bottom: 80px; }
 .slider .horz-center { text-align: center; left: 50%; }
 .slider .right { right: 0; text-align: right; }
+.slider .w-container h1 { font-size: 36px; font-weight: 300;}
 .slider .w-container h1, .slider .w-container h2, .slider .w-container h3, .slider .w-container h4, .slider .w-container h5 { color: #FFF; margin: 0; }
 .slider .w-container h1 { margin-bottom: 0; }
 .slider .w-container span.subtitle {
