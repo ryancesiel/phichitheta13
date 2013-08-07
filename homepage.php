@@ -26,13 +26,24 @@ Template Name: Home Page
 					<div class="w-container">
 						<div class="slidertext background bottom right">
 							<h3>Phi Chi Theta Fall 2012</h3>
+						</div>
 					</div>
 				</li>
 				<li>
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/bg2.jpg" />
+					<div class="w-container">
+						<div class="slidertext background bottom left">
+							<h3>Winter Pledge Class 2013</h3>
+						</div>
+					</div>
 				</li>
 				<li>
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/bg3.jpg" />
+					<div class="w-container">
+						<div class="slidertext background bottom right">
+							<h3>Class of 2013</h3>
+						</div>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -48,8 +59,11 @@ Template Name: Home Page
 				</div>
 				<div class="pull-right">
 					<div class="inputandbutton">
-					<input type="text" placeholder="example@umich.edu" />
-					<a href="#" class="btn">Add Email</a></div>
+					<form class="addemail" method="post" action="<?php bloginfo('stylesheet_directory'); ?>/form-addemail.php">
+						<input class="email" type="text" name="email" placeholder="example@umich.edu" />
+						<button type="submit" class="btn">Add Email</a>
+					</form>
+					</div>
 					<div class="postresponse">Successfully added email. Thanks!</div>
 				</div>
 				<div class="clearboth"></div>
@@ -136,6 +150,22 @@ Template Name: Home Page
 			$('.slider .w-container').css('height', sliderCorrection);
 			$('.slider .w-container').css('margin-top', -sliderCorrection);
 		};
+
+		$('.addemail').submit(function(ev) {
+			ev.preventDefault();
+			$.ajax({
+					url: '<?php bloginfo('stylesheet_directory'); ?>/form-addemail.php',
+					method: 'POST',
+					data: $('.addemail').serialize(),
+					success: function() {
+						$('.inputandbutton').fadeOut(300);
+						$('.postresponse').delay(300).fadeIn();
+					},
+					error: function() {
+						$
+					}
+			});
+		});
 
 		$('.inputandbutton a').click(function(ev) {
 			ev.preventDefault();

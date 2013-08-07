@@ -452,7 +452,7 @@ a:hover .image .overlay { text-decoration: none; }
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
-.inputandbutton a {
+.inputandbutton .btn {
 	margin-left: -5px; 
 	border-radius: 0 2px 2px 0;
 	border-left: 1px solid #4f0375;
@@ -522,6 +522,8 @@ ul.showhide li {
 	margin: 0 auto 35px;
 }
 .sponsors img { width: 100%; box-shadow: none; }
+
+.contact-response { display: none; }
 
 /* Sticky footer */
 .footer { 

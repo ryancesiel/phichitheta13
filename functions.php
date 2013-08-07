@@ -1,18 +1,5 @@
 <?php
 
-# Register theme settings in admin panel
-if(is_admin()) {   
-	require_once('lib/phichitheta13-settings.php');  
-}
-
-# Collect theme options
-function phichitheta13_get_global_options(){
-	$phichitheta13_option = array();
-	$phichitheta13_option = get_option('phichietheta13_options');
-	return $phichitheta13_option;
-}
-$phichitheta13_option = phichitheta13_get_global_options();
-
 if(function_exists('register_nav_menus')){
 	register_nav_menus(array('Primary' => 'Main Navigation Menu'));
 }
