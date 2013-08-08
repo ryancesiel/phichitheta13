@@ -15,9 +15,9 @@ Template Name: Home Page
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/videobg.jpg" />
 					<div class="w-container">
 						<div class="slidertext bottom left">
-							<h1>Lifelong Friends.<br />Professional Growth.</h1>
-							<h3><span style="color:#fff000;">Rush Phi Chi Theta Fall 2013</span></h3><br />
-							<a class="btn popup-youtube" href="http://www.youtube.com/watch?v=6JjWTAEwAcw">Play Video</a> <a href="rushwelcome.html" class="btn">Learn More About Rushing</a>
+							<h1>Rush Phi Chi Theta Fall 2013</h1>
+							<h3><span style="color:#fff000;">Professional Business and Economics Fraternity</span></h3><br />
+							<a class="btn btn-large popup-youtube" href="http://www.youtube.com/watch?v=6JjWTAEwAcw">Play Video</a> <a href="rushwelcome.html" class="btn btn-large">Learn More About Rushing</a>
 						</div>
 					</div>
 				</li>
@@ -64,7 +64,7 @@ Template Name: Home Page
 						<button type="submit" class="btn">Add Email</a>
 					</form>
 					</div>
-					<div class="postresponse">Successfully added email. Thanks!</div>
+					<div class="postresponse"></div>
 				</div>
 				<div class="clearboth"></div>
 			</div>
@@ -82,6 +82,7 @@ Template Name: Home Page
 	</div>
 
 	<script type="text/javascript">
+		// magnific popup init
 		$(document).ready(function() {
 			$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
 				disableOn: 700,
@@ -92,7 +93,7 @@ Template Name: Home Page
 				fixedContentPos: false
 			});
 		});
-	
+
 		$(window).load(function(){
 			$('.flexslider').flexslider({
 				animation: "fade",
@@ -151,26 +152,27 @@ Template Name: Home Page
 			$('.slider .w-container').css('margin-top', -sliderCorrection);
 		};
 
+		// Ajax submit for rush interest w/ animation
 		$('.addemail').submit(function(ev) {
 			ev.preventDefault();
 			$.ajax({
 					url: '<?php bloginfo('stylesheet_directory'); ?>/form-addemail.php',
 					method: 'POST',
+					dataType: 'text',
 					data: $('.addemail').serialize(),
-					success: function() {
+					success: function(message) {
+						$('.postresponse').css('color', 'green');
+						$('.postresponse').text(message);
 						$('.inputandbutton').fadeOut(300);
 						$('.postresponse').delay(300).fadeIn();
-					},
-					error: function() {
-						$
+						if(message != "Successfully added email. Thanks!") {
+							// error message -> show message, then fade out and re-display input box 
+							$('.postresponse').css('color', 'red');
+							$('.postresponse').delay(1000).fadeOut(300);
+							$('.inputandbutton').delay(1800).fadeIn(300);
+						}
 					}
 			});
-		});
-
-		$('.inputandbutton a').click(function(ev) {
-			ev.preventDefault();
-			$(this).parent().fadeOut(300);
-			$('.postresponse').delay(300).fadeIn();
 		});
 	</script>
 
