@@ -97,7 +97,7 @@ Template Name: Home Page
 		$(window).load(function(){
 			$('.flexslider').flexslider({
 				animation: "fade",
-				animationSpeed: 1300,
+				animationSpeed: 1000,
 				start: function(slider){
 					$('body').removeClass('loading');
 				}

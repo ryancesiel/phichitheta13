@@ -65,6 +65,13 @@ a img { border: 0; }
 img.pull-left { margin: 0 30px 30px 0; }
 img.pull-right { margin: 0 0 30px 30px; }
 
+input[type="text"]:focus {
+	border-color: #999;
+	outline: 0;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+			box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
 .wrapper {
 	min-height: 100%;
 	height: auto !important;
@@ -446,12 +453,6 @@ a:hover .image .overlay { text-decoration: none; }
 	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.07);
 	border-color: #B5B5B5;
 }
-.inputandbutton input[type="text"]:focus {
-  border-color: #999;
-  outline: 0;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-}
 .inputandbutton .btn {
 	margin-left: -5px; 
 	border-radius: 0 2px 2px 0;
@@ -522,7 +523,8 @@ ul.showhide li {
 }
 .sponsors img { width: 100%; box-shadow: none; }
 
-.contact-response { display: none; }
+.error label { color: red; }
+.error input[type="text"], .error textarea { border-color: red; }
 
 /* Sticky footer */
 .footer { 

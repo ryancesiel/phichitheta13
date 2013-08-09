@@ -52,7 +52,7 @@ Template Name: Contact Page
 					<div class="control-group">
 						<label class="control-label" for="message">Message</label>
 						<div class="controls">
-							<textarea rows="5" class="input-xxlarge" id="message" name="message"></textarea>
+							<textarea rows="6" class="input-xxlarge" id="message" name="message"></textarea>
 						</div>
 					</div>
 					<div class="control-group">
@@ -72,16 +72,23 @@ Template Name: Contact Page
 			$.ajax({
 					url: '<?php bloginfo('stylesheet_directory'); ?>/form-contact.php',
 					method: 'POST',
+					dataType: 'json',
 					data: $('.form-horizontal').serialize(),
-					success: function() {
-						$('.contact-message').css('color', 'green');
-						$('.contact-message').text('Your message was successfully sent.');
-						$('.contact-message').fadeIn(300);
-					},
-					error: function() {
-						$('.contact-message').css('color', 'red');
-						$('.contact-message').text('Your message did not send successfully.');
-						$('.contact-message').fadeIn(300);
+					success: function(errors) {
+						if(!jQuery.isEmptyObject(errors)) {
+							$('.contact-message').css('color', 'red');
+							$('.contact-message').text('Sorry, there was an error.  Please confirm that you have entered a valid email and that all fields have been completed.');
+							for (var key in errors) {
+								if (errors.hasOwnProperty(key)) {
+									$('#' + errors[key]).parent().parent().addClass('error');
+								}
+							}
+						} else {
+							$('.control-group').removeClass('error'); // remove error class if it was there
+							$('.contact-message').css('color', 'green');
+							$('.contact-message').text('Your message was successfully sent.');
+							$('.contact-message').fadeIn(300);
+						}
 					}
 			});
 		});
