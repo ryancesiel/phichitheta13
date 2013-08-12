@@ -82,6 +82,14 @@
 			$.magnificPopup.close();
 		});
 	});
+
+	// Accordion Functionality
+	$('.showhide li h3').click(function () {
+		$('+ .showhide_content', this).slideToggle(200);
+
+		var $this = $(this).find('span');
+		$this.text($this.text() == '+' ? '-' : '+');
+	});
 </script>
 </body>
 </html>

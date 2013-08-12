@@ -14,7 +14,23 @@ function isSubPage() {
 	};
 };
 
-# Column shortcodes from mysitemyway.com
+// Slide down shortcodes
+function showhide( $atts, $content = null ) {
+   return '<ul class="showhide">' . do_shortcode($content) . '</ul>';
+}
+add_shortcode('showhide', 'showhide');
+
+function showhide_title( $atts, $content = null ) {
+   return '<li><h3><span>+</span>' . do_shortcode($content) . '</h3>';
+}
+add_shortcode('showhide_title', 'showhide_title');
+
+function showhide_content( $atts, $content = null ) {
+   return '<div class="showhide_content">' . do_shortcode($content) . '</div></li>';
+}
+add_shortcode('showhide_content', 'showhide_content');
+
+// Column shortcodes from mysitemyway.com
 function one_third( $atts, $content = null ) {
    return '<div class="one_third">' . do_shortcode($content) . '</div>';
 }
