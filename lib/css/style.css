@@ -91,13 +91,15 @@ input[type="text"]:focus {
 }
 .logo {
 	float: left;
-	width: 227px;
-	height: 70px;   
+	width: 228px;
+	height: 70px;
 }
 .logo img {
 	box-shadow: none;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
+	width: 228px;
+	height: 70px;
 }
 
 /* Primary Navigation in .header */
@@ -494,8 +496,8 @@ ul.pages li a {
 ul.pages li a:hover { text-decoration: none; background: #FFF; color: #333; }
 ul.pages li a.current { background: #E5E5E5; box-shadow: inset 1px 1px 1px #D5D5D5; color: #333; }
 
-.gallery .gallery-row:first-child { margin-top: 0; }
-.gallery .gallery-row { margin: 6px 0; }
+.gallery p { height: 0; margin: 0; }
+.gallery-item { float: left; margin: 2.5%; }
 
 /* Slide down show/hide element (used on FAQ page) */
 ul.showhide { padding: 0; margin: 0 0 0 10px; }

@@ -14,6 +14,9 @@ function isSubPage() {
 	};
 };
 
+// Remove WP default styling for gallery
+add_filter( 'use_default_gallery_style', '__return_false' );
+
 // Slide down shortcodes
 function showhide( $atts, $content = null ) {
    return '<ul class="showhide">' . do_shortcode($content) . '</ul>';
@@ -29,6 +32,17 @@ function showhide_content( $atts, $content = null ) {
    return '<div class="showhide_content">' . do_shortcode($content) . '</div></li>';
 }
 add_shortcode('showhide_content', 'showhide_content');
+
+// Large Title Numbered List
+function large_numberedlist( $atts, $content = null ) {
+   return '<ol class="special">' . do_shortcode($content) . '</ol>';
+}
+add_shortcode('large_numberedlist', 'large_numberedlist');
+
+function large_numberedlist_item( $atts, $content = null ) {
+   return '<li>' . do_shortcode($content) . '</li>';
+}
+add_shortcode('large_numberedlist_item', 'large_numberedlist_item');
 
 // Column shortcodes from mysitemyway.com
 function one_third( $atts, $content = null ) {

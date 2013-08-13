@@ -34,6 +34,7 @@
 			<?php while ( have_posts() ) : the_post(); ?>  
 				<?php the_content('Read More'); ?> 
 			<?php endwhile; ?> 
+			<div class="clearboth"></div>
 			<ul class="pages"></ul>
 			</div>
 		</div>

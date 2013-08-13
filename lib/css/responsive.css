@@ -48,7 +48,7 @@
 	.form-horizontal .control-label { width: 80px; }
 	.form-horizontal .controls { margin-left: 100px; }
 	.input-xxlarge { width: 430px; }
-	.gallery-row img { width: 120px; height: 100px; }
+	.gallery-item img { width: 120px; height: 100px; }
 }
 
 @media only screen and (max-width: 640px) {
