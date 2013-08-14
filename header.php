@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width" />
 	<?php wp_head(); ?>
 
-	<link rel="shortcut icon" href="<?php echo THEME_DIR; ?>/path/favicon.ico" /> 
+	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/lib/img/favicon.png" /> 
 	<link href='http://fonts.googleapis.com/css?family=Roboto:300, 300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 	<?php if(is_front_page()) { ?><link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/lib/css/flexslider.css" type="text/css" media="screen" /> <?php } ?>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/lib/css/magnific.css">

@@ -49,6 +49,7 @@
 	.form-horizontal .controls { margin-left: 100px; }
 	.input-xxlarge { width: 430px; }
 	.gallery-item img { width: 120px; height: 100px; }
+	.gallery-item { margin: 1.75%; }
 }
 
 @media only screen and (max-width: 640px) {
@@ -72,7 +73,8 @@
 	.content-header { padding: 18px 7%;}
 	.content-body { padding: 7%; }
 	.content-body img { width: 100%; }
-	.gallery-row img { width: 80px; height: 65px; }
+	.gallery img { width: 80px; height: 65px; }
+	.gallery-item { margin: 3.8%; }
 
 	ul.nav { display: none; }
 	ul.mobile-nav { display: inline-block; }
@@ -97,4 +99,5 @@
 	.form-horizontal .control-label { width: 16%; }
 	.form-horizontal .controls { margin-left: 22%; }
 	.input-xxlarge { width: 100%; }
+	.btn-large { padding: 4px 12px; }
 }
