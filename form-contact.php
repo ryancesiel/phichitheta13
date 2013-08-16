@@ -15,7 +15,7 @@
 	// Check if there were errors
 	// if none, mail the message, else send the errors back
 	if(empty($errors)) {
-		mail("ryances@umich.edu", "[PCT Website] " . $subject, $message, "From: " . $email);
+		mail("phichithetazb@gmail.com", "[PCT Website] " . $subject, $message, "From: " . $email);
 	}
 	echo json_encode($errors);
 ?>

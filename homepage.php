@@ -17,7 +17,7 @@ Template Name: Home Page
 						<div class="slidertext bottom left">
 							<h1>Rush Phi Chi Theta Fall 2013</h1>
 							<h3><span style="color:#fff000;">Professional Business and Economics Fraternity</span></h3><br />
-							<a class="btn btn-large popup-youtube" href="http://www.youtube.com/watch?v=6JjWTAEwAcw">Play Video</a> <a href="rushwelcome.html" class="btn btn-large">Learn More About Rushing</a>
+							<a class="btn btn-large popup-youtube" href="http://www.youtube.com/watch?v=6JjWTAEwAcw">Play Video</a> <a href="http://umphichitheta.com/rush/" class="btn btn-large">Learn More About Rushing</a>
 						</div>
 					</div>
 				</li>

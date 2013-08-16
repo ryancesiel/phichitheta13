@@ -17,6 +17,14 @@ function isSubPage() {
 // Remove WP default styling for gallery
 add_filter( 'use_default_gallery_style', '__return_false' );
 
+// Misc style shortcodes
+// Larger font paragraph
+function big_paragraph( $atts, $content = null ) {
+   return '<p class="big">' . do_shortcode($content) . '</p>';
+}
+add_shortcode('big_paragraph', 'big_paragraph');
+
+
 // Slide down shortcodes
 function showhide( $atts, $content = null ) {
    return '<ul class="showhide">' . do_shortcode($content) . '</ul>';
