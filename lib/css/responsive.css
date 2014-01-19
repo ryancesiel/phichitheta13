@@ -17,6 +17,7 @@
 	.logo { width: 195px; height: 60px; }
 	.logo img {
 		height: 60px;
+		width: auto;
 		box-shadow: none;
 		-moz-box-shadow: none;
 		-webkit-box-shadow: none;
@@ -30,6 +31,8 @@
 		float: none;
 	}
 	.content-home { top: 15px; margin: 0 auto 35px auto; }
+	.content-home img { width: 100%; height: auto; }
+	.content-body img { width: 100%; height: auto; }
 	.sponsors { margin-bottom: 25px; }
 	.slider .bottom { bottom: 20px; }
 }
@@ -72,7 +75,6 @@
 	.sub-header { top: 56px; }
 	.content-header { padding: 18px 7%;}
 	.content-body { padding: 7%; }
-	.content-body img { width: 100%; }
 	.gallery img { width: 80px; height: 65px; }
 	.gallery-item { margin: 3.8%; }
 

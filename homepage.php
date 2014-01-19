@@ -15,17 +15,33 @@ Template Name: Home Page
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/videobg.jpg" />
 					<div class="w-container">
 						<div class="slidertext bottom left">
-							<h1>Rush Phi Chi Theta Fall 2013</h1>
+							<h1>Rush Phi Chi Theta Winter 2014</h1>
 							<h3><span style="color:#fff000;">Professional Business and Economics Fraternity</span></h3><br />
-							<a class="btn btn-large popup-youtube" href="http://www.youtube.com/watch?v=6JjWTAEwAcw">Play Video</a> <a href="http://umphichitheta.com/rush/" class="btn btn-large">Learn More About Rushing</a>
+							<a class="btn btn-large popup-youtube" href="http://www.youtube.com/watch?v=ruBHnr5mRcM">Play Video</a> <a href="http://umphichitheta.com/rush/" class="btn btn-large">Learn More About Rushing</a>
 						</div>
 					</div>
 				</li>
 				<li>
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/bg1.jpg" />
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/fallcidermill.jpg" />
+					<div class="w-container">
+						<div class="slidertext background bottom left">
+							<h3>Fall 2013 - Cider Mill</h3>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/parkpainting.jpg" />
+					<div class="w-container">
+						<div class="slidertext background bottom left">
+							<h3>Veterans Memorial Park Painting</h3>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/fall2013.jpg" />
 					<div class="w-container">
 						<div class="slidertext background bottom right">
-							<h3>Phi Chi Theta Fall 2012</h3>
+							<h3>Phi Chi Theta Fall 2013</h3>
 						</div>
 					</div>
 				</li>
@@ -55,7 +71,7 @@ Template Name: Home Page
 		<div class="content content-home">
 			<div class="calltoaction">
 				<div class="pull-left">
-					Interested in rushing Fall 2013?  Add your email address to the the contact list!
+					Interested in rushing Winter 2014?  Add your email address to the contact list!
 				</div>
 				<div class="pull-right">
 					<div class="inputandbutton">
